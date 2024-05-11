@@ -14,8 +14,8 @@ public class equivalentArrayUsingHashMap {
                 counter1++;
 
                 memory1.put(a1[i], true);
-            }
 
+            }
         }
 
         for (int j = 0; j < a2.length; j++) {
