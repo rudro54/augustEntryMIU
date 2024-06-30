@@ -4,9 +4,9 @@ public class SelectionSort {
 
         int[] intArray = {20,35,-15,7,55,1,-22};
 
-        for(int lastUnsortedIndex= intArray.length-1; lastUnsortedIndex>0; lastUnsortedIndex--){
+        for(int lastUnsortedIndex=intArray.length-1; lastUnsortedIndex>0; lastUnsortedIndex--){
 
-            int largest=0;
+            int largest =0;
             for(int i=1; i<=lastUnsortedIndex; i++){
                 if(intArray[i]>intArray[largest]){
                     largest=i;
@@ -16,24 +16,24 @@ public class SelectionSort {
             swap(intArray,largest, lastUnsortedIndex);
         }
 
-        for(int i=0; i< intArray.length; i++){
-            System.out.println(intArray[i]);
-        }
+      for(int i=0; i<intArray.length; i++){
+          System.out.println(intArray[i]);
+      }
 
     }
 
-
-    public static void swap(int[] a, int i , int j){
+    public static void swap(int[] a, int i, int j){
         if(i==j){
-
             return;
         }
+
         int temp=a[i];
         a[i]=a[j];
         a[j]=temp;
-
-
     }
+
+
+
 
 
 }
