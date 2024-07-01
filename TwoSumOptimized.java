@@ -20,7 +20,7 @@ public abstract class TwoSumOptimized {
                     if (originalArray[j] == arr[i] && index1 == -1) {
                         index1 = j;// 0
                     } else if (originalArray[j] == arr[x] && index2 == -1) {
-                        index2 = j;
+                        index2 = j;// 3
 
                     }
                     if (index1 != -1 && index2 != -1) {

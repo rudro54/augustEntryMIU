@@ -31,6 +31,8 @@ public class TwoSumMoreOptimized {
 
         System.out.println(Arrays.toString(TwoSumMoreOptimizedMethod(new int[] { 3, 3 }, 6)));
 
+        System.out.println(Arrays.toString(TwoSumMoreOptimizedMethod(new int[] { 0, 4, 3, 0 }, 0)));
+
     }
 
 }
