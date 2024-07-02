@@ -23,7 +23,10 @@ public class equivalentArrayUsingHashMap {
                 return 0;
             } else if (!memory2.containsKey(a2[j])) {
                 counter2++;
+
+                // you need to update the second map otherwise logic will not work
                 memory2.put(a2[j], true);
+
             }
 
         }
@@ -55,5 +58,4 @@ public class equivalentArrayUsingHashMap {
         System.out.println(equivalentArrayUsingHashMapMethod(new int[] {}, new int[] {}));
 
     }
-
 }
