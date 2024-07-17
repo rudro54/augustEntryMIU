@@ -34,6 +34,7 @@ public class MinDistanceFactors {
         }
 
         int minDistance = Integer.MAX_VALUE;
+        // you can use n+1 here
 
         for (int i = 1; i < factorsCounter; i++) {
             int distance = factorsArray[i] - factorsArray[i - 1];
