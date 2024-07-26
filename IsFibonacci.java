@@ -50,6 +50,31 @@ public class IsFibonacci {
 
     }
 
+    public static boolean isPerfectSquareNumber(int x) {
+
+        if (x < 0) {
+            return false;
+        }
+
+        int s = (int) Math.sqrt(x);
+
+        return s * s == x;
+
+    }
+
+    public static int isFibonacci(int n) {
+
+        int x1 = 5 * n * n + 4;
+        int x2 = 5 * n * n - 4;
+
+        if (isPerfectSquareNumber(x1) || isPerfectSquare(x2)) {
+            return 1;
+        }
+
+        return 0;
+
+    }
+
     public static void main(String[] args) {
         System.out.println(IsFibonacciMethod(1));
         System.out.println(IsFibonacciMethod(2));
@@ -59,6 +84,17 @@ public class IsFibonacci {
         System.out.println(IsFibonacciMethod(13));
         System.out.println(IsFibonacciMethod(21));
         System.out.println(IsFibonacciMethod(22));
+
+        System.out.println("Checking something new with another function ..");
+
+        System.out.println(isFibonacci(1));
+        System.out.println(isFibonacci(2));
+        System.out.println(isFibonacci(3));
+        System.out.println(isFibonacci(4));
+        System.out.println(isFibonacci(5));
+        System.out.println(isFibonacci(13));
+        System.out.println(isFibonacci(21));
+        System.out.println(isFibonacci(22));
     }
 
 }
