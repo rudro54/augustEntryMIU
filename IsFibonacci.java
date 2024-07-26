@@ -62,12 +62,40 @@ public class IsFibonacci {
 
     }
 
+    public static boolean isPerfectSquareNumberBinary(int x) {
+
+        int left = 0;
+        int right = x;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            int midSquared = mid * mid;
+
+            if (midSquared == x) {
+                return true;
+            }
+            if (midSquared < x) {
+                left = mid + 1;
+            }
+            if (midSquared > x) {
+                right = mid - 1;
+            }
+
+        }
+
+        return false;
+    }
+
     public static int isFibonacci(int n) {
 
         int x1 = 5 * n * n + 4;
         int x2 = 5 * n * n - 4;
 
-        if (isPerfectSquareNumber(x1) || isPerfectSquare(x2)) {
+        // if (isPerfectSquareNumber(x1) || isPerfectSquare(x2)) {
+        // return 1;
+        // }
+
+        if (isPerfectSquareNumberBinary(x1) || isPerfectSquareNumberBinary(x2)) {
             return 1;
         }
 
