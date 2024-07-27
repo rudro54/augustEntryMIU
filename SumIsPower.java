@@ -29,7 +29,15 @@ public class SumIsPower {
             sum += num;
         }
 
-        return sum > 0 && (sum & (sum - 1)) == 0;
+        // return sum > 0 && (sum & (sum - 1)) == 0;
+
+        // apart from and operation this also is handy
+
+        while (sum % 2 == 0) {
+            sum /= 2;
+        }
+
+        return sum == 1;
     }
 
     public static void main(String[] args) {
