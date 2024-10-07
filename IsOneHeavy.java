@@ -6,7 +6,7 @@ public class IsOneHeavy {
             return 0;
         }
 
-        int oneCount = 0;
+        int oneCounter = 0;
 
         for (int num : a) {
 
@@ -15,17 +15,19 @@ public class IsOneHeavy {
             }
 
             if (num == 1) {
-                oneCount++;
+                oneCounter++;
             } else {
-                if (oneCount < 2) {
+                if (oneCounter < 2) {
                     return 0;
                 }
-                oneCount = 0;
+
+                oneCounter = 0;
+
             }
 
         }
 
-        return oneCount == 0 ? 1 : 0;
+        return oneCounter == 0 ? 1 : 0;
 
     }
 
