@@ -9,8 +9,9 @@ public class CommonElemetsOfTwoArrays {
             return null;
         }
 
-        int maxLength = first.length < second.length ? second.length : first.length;
-        int tempArray[] = new int[maxLength];
+        int lengthBareMinimum = first.length < second.length ? first.length : second.length;
+
+        int tempArray[] = new int[lengthBareMinimum];
 
         int counter = 0;
 
@@ -18,9 +19,8 @@ public class CommonElemetsOfTwoArrays {
             for (int j = 0; j < second.length; j++) {
                 if (first[i] == second[j]) {
                     tempArray[counter++] = first[i];
-
+                    break;
                 }
-
             }
         }
 
@@ -28,7 +28,6 @@ public class CommonElemetsOfTwoArrays {
 
         for (int i = 0; i < result.length; i++) {
             result[i] = tempArray[i];
-
         }
 
         return result;

@@ -13,7 +13,7 @@ public class PointOfEquilibriumInAnArray {
         for (int i = 0; i < a.length; i++) {
             totalSum -= a[i];
 
-            if (leftSum == totalSum) {
+            if (totalSum == leftSum) {
                 return i;
             }
 
