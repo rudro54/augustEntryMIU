@@ -3,20 +3,20 @@ public class BeanArrayNewQuestion {
     public static int isBean(int[] a) {
 
         for (int i = 0; i < a.length; i++) {
-            boolean found = false;
-            for (int j = 0; j < a.length; j++) {
 
-                if (i != j && ((a[i] - a[j] == 1) || (a[j] - a[i] == 1))) {
+            boolean found = false;
+
+            for (int j = 0; j < a.length; j++) {
+                if (i != j && (a[i] - 1 == a[j] || a[i] + 1 == a[j])) {
                     found = true;
+                    break;
                 }
 
             }
-
             if (!found) {
                 return 0;
             }
         }
-
         return 1;
 
     }
