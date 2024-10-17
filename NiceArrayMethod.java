@@ -4,21 +4,19 @@ public class NiceArrayMethod {
 
         for (int num : a) {
 
-            boolean plus = false;
-            boolean minus = false;
+            boolean nPlusOne = false;
+            boolean nMinusOne = false;
 
             if (contains(a, num + 1)) {
-                plus = true;
+                nPlusOne = true;
             }
-
             if (contains(a, num - 1)) {
-                minus = true;
+                nMinusOne = true;
             }
 
-            if (!plus && !minus) {
+            if (!nPlusOne && !nMinusOne) {
                 return 0;
             }
-
         }
 
         return 1;
@@ -34,10 +32,14 @@ public class NiceArrayMethod {
         }
 
         return false;
+
     }
 
     public static void main(String[] args) {
         System.out.println(isNice(new int[] { 2, 10, 9, 3 }));
+        System.out.println(isNice(new int[] { 2, 2, 3, 3, 3 }));
+        System.out.println(isNice(new int[] { 1, 1, 1, 2, 1, 1 }));
+        System.out.println(isNice(new int[] { 0, -1, 1 }));
         System.out.println(isNice(new int[] { 3, 4, 5, 7 }));
 
     }
