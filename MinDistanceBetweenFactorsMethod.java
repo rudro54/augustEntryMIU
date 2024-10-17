@@ -17,16 +17,15 @@ public class MinDistanceBetweenFactorsMethod {
             if (n % i == 0) {
                 if (previousFactor != -1) {
                     int distance = i - previousFactor;
+
                     if (distance < minDistance) {
                         minDistance = distance;
                     }
                 }
                 previousFactor = i;
-
             }
 
         }
-
         return minDistance;
 
     }
