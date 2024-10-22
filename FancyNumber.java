@@ -11,15 +11,14 @@ public class FancyNumber {
         int currentFancy = 0;
 
         while (currentFancy < n) {
-
             currentFancy = 3 * prev1 + 2 * prev2;
+
             if (currentFancy == n) {
                 return 1;
             }
 
             prev2 = prev1;
             prev1 = currentFancy;
-
         }
 
         return 0;
