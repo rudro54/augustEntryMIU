@@ -6,20 +6,22 @@ public class CountDigit {
             return -1;
         }
 
-        int count = 0;
+        int counter = 0;
 
         while (n > 0) {
-
             int lastDigit = n % 10;
+
             if (lastDigit == digit) {
-                count++;
+
+                counter++;
+
             }
 
-            n = n / 10;
-
+            n /= 10;
         }
 
-        return count;
+        return counter;
+
     }
 
     public static void main(String[] args) {
