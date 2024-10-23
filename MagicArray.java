@@ -1,6 +1,7 @@
 public class MagicArray {
 
     public static int isPrime(int n) {
+
         if (n <= 1) {
             return 0;
         }
@@ -12,6 +13,7 @@ public class MagicArray {
         }
 
         return 1;
+
     }
 
     public static int isMagicArray(int[] a) {
@@ -21,16 +23,22 @@ public class MagicArray {
         }
 
         int sum = 0;
+        boolean hasPrime = false;
 
         for (int i = 0; i < a.length; i++) {
-            if (isPrime(a[i]) == 1) {
 
+            if (isPrime(a[i]) == 1) {
+                hasPrime = true;
                 sum += a[i];
 
             }
-        }
 
-        if (sum == a[0] || a[0] == 0) {
+        }
+        if (!hasPrime && a[0] == 0) {
+
+            return 1;
+
+        } else if (sum == a[0]) {
             return 1;
         }
 
