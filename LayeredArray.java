@@ -5,18 +5,17 @@ public class LayeredArray {
         if (a.length < 2) {
             return 0;
         }
+
         int counter = 1;
 
         for (int i = 1; i < a.length; i++) {
 
             if (a[i] < a[i - 1]) {
                 return 0;
-
             }
 
             if (a[i] == a[i - 1]) {
                 counter++;
-
             } else {
                 if (counter < 2) {
                     return 0;
@@ -25,9 +24,11 @@ public class LayeredArray {
             }
 
         }
+
         if (counter < 2) {
             return 0;
         }
+
         return 1;
 
     }
