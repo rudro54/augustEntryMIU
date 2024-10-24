@@ -5,6 +5,7 @@ public class LargestAdjacentSumMethod {
         int maxSum = Integer.MIN_VALUE;
 
         for (int i = 0; i < a.length - 1; i++) {
+
             int adjacentSum = a[i] + a[i + 1];
             if (adjacentSum > maxSum) {
                 maxSum = adjacentSum;
