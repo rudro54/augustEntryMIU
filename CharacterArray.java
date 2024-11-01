@@ -71,4 +71,4 @@ public class CharacterArray {
         System.out.println(java.util.Arrays.toString(CharacterArrayWay(new char[] {}, 0, 1)));
 
     }
-}g
+}
