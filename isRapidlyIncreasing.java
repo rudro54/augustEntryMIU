@@ -19,7 +19,7 @@ public class isRapidlyIncreasing {
 
     }
 
-    public static int isRapidlyIncreasing(int[] a) {
+    public static int isRapidlyIncreasingWay(int[] a) {
 
         if (a == null || a.length == 0) {
             return 0;
@@ -52,12 +52,12 @@ public class isRapidlyIncreasing {
         System.out.println(isRapidlyIncreasingMethod(new int[] { 1, 3, 8, 27 }));
         System.out.println("new line");
         System.out.println("new line");
-        System.out.println(isRapidlyIncreasing(new int[] { 1, 3, 9, 27 }));
-        System.out.println(isRapidlyIncreasing(new int[] { 1, 3, 200, 500 }));
-        System.out.println(isRapidlyIncreasing(new int[] { 1 }));
-        System.out.println(isRapidlyIncreasing(new int[] { 1, 3, 9, 26 }));
-        System.out.println(isRapidlyIncreasing(new int[] { 1, 3, 7, 26 }));
-        System.out.println(isRapidlyIncreasing(new int[] { 1, 3, 8, 27 }));
+        System.out.println(isRapidlyIncreasingWay(new int[] { 1, 3, 9, 27 }));
+        System.out.println(isRapidlyIncreasingWay(new int[] { 1, 3, 200, 500 }));
+        System.out.println(isRapidlyIncreasingWay(new int[] { 1 }));
+        System.out.println(isRapidlyIncreasingWay(new int[] { 1, 3, 9, 26 }));
+        System.out.println(isRapidlyIncreasingWay(new int[] { 1, 3, 7, 26 }));
+        System.out.println(isRapidlyIncreasingWay(new int[] { 1, 3, 8, 27 }));
 
     }
 
