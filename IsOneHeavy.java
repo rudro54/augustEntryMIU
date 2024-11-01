@@ -52,33 +52,31 @@ public class IsOneHeavy {
 
         }
 
-        return 1;
+        return oneCounter == 0 ? 1 : 0;
     }
 
     public static void main(String[] args) {
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 0, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 3, 3, 3, 0, 3, 3, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 0, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 3, 3, 3, 0, 3, 3, 0 }));
         System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 0, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0
-        // }));
-        // System.out.println("new line");
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 0, 1, 1, 1, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 3, 3, 3, 0, 3, 3, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 0, 0 }));
-        // System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0
-        // }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 0, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0 }));
+        System.out.println("new line");
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 0, 1, 1, 1, 0 }));
+        System.out.println(isOneHeavy(new int[] { 3, 3, 3, 0, 3, 3, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 1, 1, 1, 1, 0, 0 }));
+        System.out.println(isOneHeavy(new int[] { 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0 }));
 
     }
 
