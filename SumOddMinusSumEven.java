@@ -20,6 +20,20 @@ public class SumOddMinusSumEven {
 
     }
 
+    public static int f(int[] a) {
+
+        int sum = 0;
+        for (int num : a) {
+            if (num % 2 == 1) {
+                sum += num;
+            } else {
+                sum -= num;
+            }
+
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         System.out.println(SumOddMinusSumEvenMethod(new int[] { 1 }));
         System.out.println(SumOddMinusSumEvenMethod(new int[] { 1, 2 }));
@@ -30,6 +44,17 @@ public class SumOddMinusSumEven {
         System.out.println(SumOddMinusSumEvenMethod(new int[] { 4, 1, 2, 3 }));
         System.out.println(SumOddMinusSumEvenMethod(new int[] { 1, 1 }));
         System.out.println(SumOddMinusSumEvenMethod(new int[] {}));
+        System.out.println("new line");
+        System.out.println("new line");
+        System.out.println(f(new int[] { 1 }));
+        System.out.println(f(new int[] { 1, 2 }));
+        System.out.println(f(new int[] { 1, 2, 3 }));
+        System.out.println(f(new int[] { 1, 2, 3, 4 }));
+        System.out.println(f(new int[] { 3, 3, 4, 4 }));
+        System.out.println(f(new int[] { 3, 2, 3, 4 }));
+        System.out.println(f(new int[] { 4, 1, 2, 3 }));
+        System.out.println(f(new int[] { 1, 1 }));
+        System.out.println(f(new int[] {}));
 
     }
 
