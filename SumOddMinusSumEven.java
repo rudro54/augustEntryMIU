@@ -54,7 +54,7 @@ public class SumOddMinusSumEven {
         System.out.println(f(new int[] { 3, 2, 3, 4 }));
         System.out.println(f(new int[] { 4, 1, 2, 3 }));
         System.out.println(f(new int[] { 1, 1 }));
-        System.out.println(f(new int[] {}));g
+        System.out.println(f(new int[] {}));
 
     }
 
